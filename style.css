@@ -1,0 +1,176 @@
+body {
+  background-color: rgb(1, 7, 17);
+}
+.todo .contains {
+  display: flex;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 20px whitesmoke;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  border-radius: 10px;
+  width: 450px;
+  max-height: 550px;
+  justify-content: center;
+  padding: 0px 20px;
+  overflow: scroll;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #029fc7; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid #000b4b; /* Creates padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00489b; /* Color of the scrollbar thumb when hovered */
+}
+.todo h2 {
+  font-family: Sedan;
+  font-weight: 600;
+  font-size: 35px;
+  color: rgb(228, 227, 227);
+  text-shadow: 5px 5px 10px rgb(9, 105, 129);
+}
+.todo .inputs {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+.todo #inp {
+  font-family: Sedan;
+  outline: 2px solid rgb(6, 61, 75);
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  background-color: #808080;
+  color: #161616;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  padding: 6px 30px;
+  border-radius: 5px;
+  border: 4px solid #eeeeee;
+}
+.todo #btn {
+  font-family: Sedan;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 11px 20px;
+  text-shadow: 2px 2px 12px black;
+  font-size: 17px;
+  background-color: #0e2d3f;
+  color: whitesmoke;
+}
+.todo #btn:hover {
+  background-color: #00629b;
+}
+.todo #texts ul {
+  background-color: rgb(1, 31, 56);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  box-shadow: 2px 2px 20px whitesmoke;
+  padding: 5px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+.circle {
+  border: 16px solid #015661;
+  /* border-top: 16px solid #bcdb34; */
+  position: relative;
+  box-shadow: 2px 2px 20px white;
+  width: 300px;
+  height: 300px;
+  animation: spin 2s linear infinite;
+  /* border: 10px solid #ebff37; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+#time-display {
+  color: rgb(50, 224, 255);
+  font-size: 3em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button,
+.buttons input {
+  background-color: #2d2d2d;
+  box-shadow: 0px 0px 10px rgb(54, 198, 255);
+  color: rgb(0, 109, 136);
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover,
+.buttons input:hover {
+  background-color: #000000;
+}
+
+.buttons .play::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 12px solid rgb(255, 255, 255);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.buttons .pause::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background-color: rgb(255, 255, 255);
+}
+
+.buttons .reset::before {
+  content: "\21BA";
+  font-size: 1em;
+}
+
+#customTime {
+  width: 60px;
+  text-align: center;
+}
+
+
+.video-container iframe {   
+    width: 390px;
+    height: 240px;
+}
+
+.video-container{
+    margin: 20px 30px ;
+    padding: 20px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:96%;
+    overflow-x: scroll;
+    box-shadow: 10px 10px 40px rgb(184, 184, 184);
+}
